@@ -7,20 +7,73 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="cs301.up.edu.epicspellwards.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:background="@drawable/maxresdefault"
     android:id="@+id/background"
     android:visibility="visible">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:layout_weight="1"></LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:background="#000000">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#ab3430">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Health: "
+                android:id="@+id/playerHealthText"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:gravity="center_vertical"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="fill_parent"
+                android:text=""
+                android:id="@+id/greenHealthBar"
+                android:background="#11ff00"
+                android:padding="8dp" />
+
+            <Space
+                android:layout_width="470dp"
+                android:layout_height="fill_parent" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/readyButton"
+                android:text="Ready"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>
