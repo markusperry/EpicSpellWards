@@ -16,7 +16,25 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENU"
+                android:id="@+id/button"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
@@ -86,7 +104,8 @@
                 android:padding="2dp"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true"/>
 
             <ImageButton
                 android:layout_width="125dp"
@@ -97,7 +116,8 @@
                 android:scaleType="fitXY"
                 android:cropToPadding="false"
                 android:padding="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true"/>
 
             <ImageButton
                 android:layout_width="125dp"
@@ -108,7 +128,8 @@
                 android:scaleType="fitXY"
                 android:cropToPadding="false"
                 android:padding="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true"/>
 
             <ImageButton
                 android:layout_width="125dp"
@@ -119,7 +140,8 @@
                 android:scaleType="fitXY"
                 android:cropToPadding="false"
                 android:padding="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true"/>
 
             <ImageButton
                 android:layout_width="125dp"
@@ -130,7 +152,8 @@
                 android:scaleType="fitXY"
                 android:cropToPadding="false"
                 android:padding="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true"/>
 
             <ImageButton
                 android:layout_width="125dp"
@@ -141,7 +164,9 @@
                 android:scaleType="fitXY"
                 android:cropToPadding="false"
                 android:padding="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true"
+                />
 
             <ImageButton
                 android:layout_width="125dp"
@@ -152,7 +177,8 @@
                 android:scaleType="fitXY"
                 android:cropToPadding="false"
                 android:padding="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true" />
 
             <ImageButton
                 android:layout_width="125dp"
@@ -163,7 +189,8 @@
                 android:scaleType="fitXY"
                 android:cropToPadding="false"
                 android:padding="2dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="true"/>
         </LinearLayout>
 
     </LinearLayout>
