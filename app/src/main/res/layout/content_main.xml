@@ -15,24 +15,152 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/topHalf">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/menuPlayerBar">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MENU"
-                android:id="@+id/button"
+                android:text="@string/menu"
+                android:id="@+id/menuButton"
                 android:textStyle="bold"
                 android:typeface="serif"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/playerLeftPicture"
+                android:src="@drawable/nux"
+                android:scaleType="fitXY"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="150dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/playerLeftStats"
+                android:layout_marginTop="5dp"
+                android:background="#000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/positionLeft"
+                    android:id="@+id/playerLeftPosition"
+                    android:textColor="#ffffff"
+                    android:typeface="serif"
+                    android:paddingLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:phoneNumber="false"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fullHealth"
+                    android:id="@+id/playerLeftHealthView"
+                    android:typeface="serif"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NuxMessageOne"
+                    android:id="@+id/playerLeftMessage"
+                    android:textColor="#ffffff"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:paddingLeft="2dp"
+                    android:layout_marginRight="3dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/playerFrontPicture"
+                android:src="@drawable/nux2"
+                android:scaleType="fitXY"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#000000"
+                android:id="@+id/playerFrontStates">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/positionFront"
+                    android:id="@+id/playerFrontPosition"
+                    android:textColor="#ffffff"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:paddingLeft="2dp"
+                    android:layout_marginRight="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fullHealth"
+                    android:id="@+id/playerFrontHealth"
+                    android:paddingLeft="2dp"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NuxMessageTwo"
+                    android:id="@+id/playerFrontMessage"
+                    android:paddingLeft="2dp"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="3dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/playerRightPicture"
+                android:src="@drawable/nux3"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#000000"
+                android:id="@+id/playerRightStats">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView" />
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 
@@ -41,35 +169,37 @@
         android:layout_width="match_parent"
         android:layout_height="275dp"
         android:layout_gravity="bottom"
-        android:background="#000000">
+        android:background="#000000"
+        android:id="@+id/bottomHalf">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
-            android:background="#ab3430">
+            android:background="#ab3430"
+            android:id="@+id/healthReadySection">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:text="Health: "
+                android:text="@string/health"
                 android:id="@+id/playerHealthText"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:textSize="32dp"
+                android:textSize="32sp"
                 android:gravity="center_vertical"
                 android:padding="5dp" />
 
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="fill_parent"
-                android:text="FULL"
+                android:text="@string/fullIndicator"
                 android:id="@+id/greenHealthBar"
                 android:background="#11ff00"
                 android:padding="8dp"
                 android:textAlignment="center"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <Space
@@ -81,8 +211,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:id="@+id/readyButton"
-                android:text="Ready"
-                android:textSize="30dp"
+                android:text="@string/readyString"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 android:typeface="serif" />
 
@@ -91,9 +221,10 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:id="@+id/cardSection">
 
             <ImageButton
                 android:layout_width="125dp"
