@@ -10,4 +10,7 @@
     <string name="NuxMessageOne">I will Destroy you!</string>
     <string name="positionFront">Position: Front</string>
     <string name="NuxMessageTwo">Nuxious Maximus!</string>
+    <string name="positionRight">Position: Right</string>
+    <string name="nuxMessageThree">Bippidy Boppidy Boo</string>
+    <string name="mute">MUTE</string>
 </resources>

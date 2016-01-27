@@ -43,7 +43,7 @@
                 android:src="@drawable/nux"
                 android:scaleType="fitXY"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="150dp" />
+                android:layout_marginLeft="125dp" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -157,10 +157,69 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:id="@+id/textView" />
+                    android:text="@string/positionRight"
+                    android:id="@+id/playerRightPosition"
+                    android:textColor="#ffffff"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:paddingLeft="2dp"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fullHealth"
+                    android:id="@+id/playerRightHealth"
+                    android:paddingLeft="2dp"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nuxMessageThree"
+                    android:id="@+id/playerRightMessage"
+                    android:paddingLeft="2dp"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="3dp"/>
             </LinearLayout>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/leftcard"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="165dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/centercard"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="50dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/rightcard"
+                android:layout_marginLeft="50dp"
+                android:scaleType="fitXY" />
         </LinearLayout>
     </LinearLayout>
 
@@ -203,8 +262,17 @@
                 android:textStyle="bold" />
 
             <Space
-                android:layout_width="470dp"
+                android:layout_width="355dp"
                 android:layout_height="fill_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/mute"
+                android:id="@+id/muteButton"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
 
             <Button
                 style="?android:attr/buttonStyleSmall"
